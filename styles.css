@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #59596f;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
   }
 
   .form-container {
-    background-color: #fff;
+    background:linear-gradient(to left, #f172f8 0%, #7d9be1 80%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,9 +20,11 @@ body {
   
   h1 {
     text-align: center;
-    color: #333;
+    color: #000000;
     margin-bottom: 40px;
     margin-top: 0;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   #expenseForm {
@@ -59,7 +61,7 @@ body {
   }
 
   .table-container {
-    background-color: #fff;
+    background:linear-gradient(to left, #7d9be1 0%, #df8fff 80%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,6 +70,7 @@ body {
   }
   
   #expenseTable {
+    background-color: rgba(165, 204, 220, 0.551);
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
