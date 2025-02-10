@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Expense Tracker</h1>
+
+    <form id="expenseForm">
+      <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Amount" required>
+      </div>
+
+      <div>
+        <label for="category">Category:</label>
+        <select id="category" required>
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="utilities">Utilities</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div>
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Description">
+      </div>
+
+      <div>
+        <button type="submit">Add Expense</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <h2>Expenses</h2>
+    
+    <table id="expenseTable">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+    <div class="total">
+      <strong>Total Expenses: ₹<span id="totalAmount">0</span></strong>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
